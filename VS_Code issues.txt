@@ -1,0 +1,32 @@
+Safe delete (-d)
+If the branch has already been fully merged into your current branch, use:
+git branch -d <branch-name>
+
+
+Force delete (-D)
+If the branch contains commits you don’t care about (i.e. unmerged or unpushed), force deletion with:
+git branch -D <branch-name>
+
+Check your global user name and email:
+git config --global user.name
+git config --global user.email
+
+Check your repository-specific identity (if different): If you want to check the identity for a 
+specific repository (in case you've set it differently for that project), 
+navigate to the repository in your terminal and use:
+git config user.name
+git config user.email
+
+Configure your identity
+Set your name and email so commits are properly attributed:
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+To enable seeing .git in vscode:
+Change Settings in VS Code
+>Open Settings (Ctrl+, or Cmd+, on Mac).
+>Search for: "files.exclude".
+>You'll find something like:
+{
+  "**/.git": true
+}
