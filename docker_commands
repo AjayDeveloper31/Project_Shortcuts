@@ -1,0 +1,7 @@
+Single container:
+docker run <image> => new container from image
+docker start <id or name> => existing container start
+
+Multi Container:
+docker compose up -d => up a multi containers from docker-compose.yaml file
+docker compose down -v => down a containers and remove the containers
