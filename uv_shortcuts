@@ -1,0 +1,27 @@
+initialize uv ==> uv init
+activating venv ==> .\.venv\Scripts\activate
+adding library ==> uv add [library name]
+to run python file ==> uv run [filename.py]
+
+
+
+uv init — start a project (creates .venv, pyproject.toml, lockfile).
+Example: uv init
+
+uv add <pkg> — add a dependency (installs into the project venv).
+Example: uv add requests
+
+uv remove <pkg> — remove a dependency.
+Example: uv remove requests
+
+uv run <file> — run a script inside the project environment (no manual activate needed).
+Example: uv run main.py
+
+uv sync — make the environment match the lockfile (use when switching branches or anyone else changed deps).
+Example: uv sync
+
+uv lock — update/write the lockfile (use after adding/removing to capture exact versions).
+Example: uv lock
+
+uvx <tool> [args] — run a tool once in an ephemeral environment (great for one-off linters/formatters).
+Example: uvx ruff check .
