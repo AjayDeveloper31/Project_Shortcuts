@@ -1,4 +1,5 @@
 initialize uv ==> uv init
+to create venv ==> uv venv
 activating venv ==> .\.venv\Scripts\activate
 adding library ==> uv add [library name]
 to run python file ==> uv run [filename.py]
